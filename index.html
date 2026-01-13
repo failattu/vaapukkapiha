@@ -1,58 +1,135 @@
-<html lang="en-US">
+<!DOCTYPE html>
+<html lang="fi">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>vaapukkapiha | Vaapukkapihan websivut</title>
-<link rel="stylesheet" href="./index_files/style.css">
-<!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-<![endif]-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaapukkapiha | Asunto Oy Helsingin Vaapukkapiha</title>
+    <meta name="description" content="Asunto Oy Helsingin Vaapukkapihan verkkosivut. Yhteystiedot, isännöinti ja hallitus.">
+    <style>
+        /* Perusasetukset ja tyylit */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px;
+            background: #ffffff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-radius: 8px;
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid #e1e4e8;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            margin: 0;
+            color: #2c3e50;
+            font-size: 2.5em;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 8px;
+            padding: 5px 0;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .section-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 6px;
+            border-left: 4px solid #007bff;
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        
+        /* Mobiilioptimointi */
+        @media (max-width: 600px) {
+            .container {
+                margin: 0;
+                border-radius: 0;
+                padding: 20px;
+            }
+            h1 { font-size: 2em; }
+        }
+    </style>
 </head>
+<body>
 
-<body style="">
-    <div class="wrapper">
-      <header>
-        <h1>Vaapukkapiha</a></h1>
+    <div class="container">
+        <header>
+            <h1>Vaapukkapiha</h1>
+            <p>Asunto Oy Helsingin Vaapukkapiha</p>
+        </header>
 
-        <p>Vaapukkapihan websivut</p>
-        <p>
-        <h3>Vaapukkapihan tärkeimmät linkit:</h3> <br>
-        
+        <section>
+            <h2>Tärkeimmät linkit</h2>
             <ul>
-                <li><a href="https://fluxioisannointi.fi/">Fluxi - Isännöinti</a><br> </li>
-                <li><a href="https://www.facebook.com/groups/vaapukkapiha">Facebook</a><br> </li>
+                <li>🔗 <a href="https://kiinteistotahkola.fi" target="_blank" rel="noopener">Kiinteistötahkola (Isännöinti)</a></li>
+                <li>👥 <a href="https://www.facebook.com/" target="_blank" rel="noopener">Taloyhtiön Facebook-ryhmä</a></li>
             </ul>
-            
-        </p>
-        <p>
-       <h3> Kontaktit:</h3> <br>
-        
-            <ul>
-                <li>Isännöinti</li> 
-                <li><a href="https://asukaspalvelu.fluxioisannointi.fi/support/home">Fluxio tuki</a></li>            </ul><br> 
-            <ul>
-                <li>ASME Tiimi</li> 
-                <li>09-4789 0400</li>
-            </ul>
-            
-        </p>
-        <p>
-    <h3>Hallitus:</h3>
-                Tarja Patrikainen<br>
-                Harri Kuhanen<br>
-                Kim Forsström<br>
-                Vesa Noutia<br>
-                Eki Sipilä
-        </p>
-    
-      </header>
-      <section>
-      
-<p><img src="./index_files/vaapukkapiha.jpeg" alt="Vaapukkapiha"></p>
+        </section>
 
-      </section>
+        <section>
+            <h2>Yhteystiedot</h2>
+            <div class="section-box">
+                <p><strong>Isännöinti:</strong><br>
+                Kiinteistötahkola Helsinki<br>
+                Itälahdenkatu 15-17, 00210 Helsinki<br>
+                Puh: <a href="tel:0207480280">020 7480 280</a><br>
+                <a href="mailto:asiakaspalvelu.uusimaa@kiinteistotahkola.fi">asiakaspalvelu.uusimaa@kiinteistotahkola.fi</a></p>
+                
+                <p><strong>Huoltoyhtiö:</strong><br>
+                ASME Tiimi<br>
+                Puh: <a href="tel:0947890400">09-4789 0400</a></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Hallitus</h2>
+            <ul>
+                <li>Erkki Sipilä</li>
+                <li>Harri Kuhanen</li>
+                <li>Vesa Noutia</li>
+                <li>Pia Riikkala</li>
+                <li>Kim Forsström</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Asunto Oy Helsingin Vaapukkapiha</p>
+        </footer>
     </div>
-    <script src="./index_files/scale.fix.js"></script>
 
-</body></html>
+</body>
+</html>
