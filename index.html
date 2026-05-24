@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vaapukkapiha | Asunto Oy Helsingin Vaapukkapiha</title>
-    <meta name="description" content="Asunto Oy Helsingin Vaapukkapihan verkkosivut. Yhteystiedot, isännöinti ja hallitus.">
+    <meta name="description" content="Asunto Oy Helsingin Vaapukkapihan verkkosivut. Yhteystiedot, isännöinti, hallitus ja usein kysytyt kysymykset.">
     <style>
-        /* Perusasetukset ja tyylit */
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
@@ -40,6 +39,10 @@
             padding-bottom: 10px;
             margin-top: 30px;
         }
+        h3 {
+            color: #34495e;
+            margin-top: 20px;
+        }
         p {
             margin-bottom: 15px;
         }
@@ -66,14 +69,52 @@
             border-left: 4px solid #007bff;
             margin-top: 20px;
         }
+        .faq details {
+            margin-bottom: 10px;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            padding: 0;
+        }
+        .faq summary {
+            cursor: pointer;
+            padding: 12px 16px;
+            font-weight: 600;
+            color: #2c3e50;
+            background: #f8f9fa;
+            border-radius: 6px;
+        }
+        .faq details[open] summary {
+            border-bottom: 1px solid #e1e4e8;
+            border-radius: 6px 6px 0 0;
+        }
+        .faq details > div {
+            padding: 12px 16px;
+        }
+        .faq details ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 0.95em;
+        }
+        th, td {
+            border: 1px solid #e1e4e8;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        th {
+            background: #f0f2f5;
+        }
         footer {
             text-align: center;
             margin-top: 50px;
             color: #888;
             font-size: 0.9em;
         }
-        
-        /* Mobiilioptimointi */
+
         @media (max-width: 600px) {
             .container {
                 margin: 0;
@@ -92,38 +133,261 @@
             <p>Asunto Oy Helsingin Vaapukkapiha</p>
         </header>
 
+        <!-- Linkit -->
         <section>
-            <h2>Tärkeimmät linkit</h2>
+            <h2>Linkit ja portaalit</h2>
             <ul>
-                <li>🔗 <a href="https://kiinteistotahkola.fi" target="_blank" rel="noopener">Kiinteistötahkola (Isännöinti)</a></li>
-                <li>👥 <a href="https://www.facebook.com/" target="_blank" rel="noopener">Taloyhtiön Facebook-ryhmä</a></li>
+                <li><a href="https://kiinteistotahkola.ovi.premis.fi" target="_blank" rel="noopener">Premis</a> &ndash; osakkaan ja asukkaan portaali (tiedotteet, asiakirjat, palvelupyynnot)</li>
+                <li><a href="https://kiinteistotahkola.fi" target="_blank" rel="noopener">Kiinteistotahkola.fi</a> &ndash; isannointiyrityksen verkkosivut</li>
+                <li><a href="https://www.kodinportaali.fi" target="_blank" rel="noopener">Kodinportaali</a> &ndash; sauna-, kerhohuone- ja pesutupavarauk&shy;set</li>
+                <li><a href="https://www.asmetiimi.fi" target="_blank" rel="noopener">Asme Tiimi</a> &ndash; huoltoyhtion verkkosivut ja vikailmoitukset</li>
+                <li><a href="https://www.facebook.com/groups/vaapukkapiha" target="_blank" rel="noopener">Facebook-ryhma</a></li>
             </ul>
         </section>
 
+        <!-- Yhteystiedot -->
         <section>
             <h2>Yhteystiedot</h2>
+
             <div class="section-box">
-                <p><strong>Isännöinti:</strong><br>
-                Kiinteistötahkola Helsinki<br>
-                Itälahdenkatu 15-17, 00210 Helsinki<br>
-                Puh: <a href="tel:0207480280">020 7480 280</a><br>
-                <a href="mailto:asiakaspalvelu.uusimaa@kiinteistotahkola.fi">asiakaspalvelu.uusimaa@kiinteistotahkola.fi</a></p>
-                
-                <p><strong>Huoltoyhtiö:</strong><br>
-                ASME Tiimi<br>
-                Puh: <a href="tel:0947890400">09-4789 0400</a></p>
+                <h3>Isännöinti &ndash; Kiinteistotahkola</h3>
+                <p>
+                    <strong>Isannoitsija:</strong> Jouko Niskanen<br>
+                    <a href="mailto:jouko.niskanen@kiinteistotahkola.fi">jouko.niskanen@kiinteistotahkola.fi</a><br>
+                    Puh: <a href="tel:+358207481056">020 748 1056</a>
+                </p>
+                <p>
+                    <strong>Kirjanpitäjä:</strong> Julia Koskelo<br>
+                    <a href="mailto:julia.koskelo@kiinteistotahkola.fi">julia.koskelo@kiinteistotahkola.fi</a><br>
+                    Puh: <a href="tel:+358207488105">020 748 8105</a>
+                </p>
+                <p>
+                    <strong>Asiakaspalvelu:</strong><br>
+                    <a href="mailto:asiakaspalvelu.uusimaa@kiinteistotahkola.fi">asiakaspalvelu.uusimaa@kiinteistotahkola.fi</a><br>
+                    Puh: <a href="tel:+358207488370">020 748 8370</a><br>
+                    Turvalaaksonkaari 2, 3. krs, 01740 Vantaa
+                </p>
+            </div>
+
+            <div class="section-box">
+                <h3>Huoltoyhtiö &ndash; Asme Tiimi Oy</h3>
+                <p>
+                    <a href="mailto:asme@asmetiimi.fi">asme@asmetiimi.fi</a><br>
+                    Puh (paivystys): <a href="tel:+358947890400">09-4789 0400</a><br>
+                    Taivaanvuohentie 8, 00200 Helsinki
+                </p>
             </div>
         </section>
 
+        <!-- Hallitus -->
         <section>
-            <h2>Hallitus</h2>
+            <h2>Hallitus 2025&ndash;2026</h2>
             <ul>
-                <li>Erkki Sipilä</li>
+                <li><strong>Puheenjohtaja:</strong> Erkki Sipilä</li>
                 <li>Harri Kuhanen</li>
-                <li>Vesa Noutia</li>
-                <li>Pia Riikkala</li>
                 <li>Kim Forsström</li>
+                <li>Pia Riikkala</li>
+                <li>Vesa Noutia</li>
             </ul>
+        </section>
+
+        <!-- Premis-portaali -->
+        <section>
+            <h2>Premis-portaali</h2>
+            <p><a href="https://kiinteistotahkola.ovi.premis.fi" target="_blank" rel="noopener">Premis</a> on yhtion virallinen portaali. Se sisältää tiedote- ja kokousarkiston, kodinkansion, pelastussuunnitelman seka palvelupyynnöt, asiakirjatilaukset ja muutostyöilmoitukset.</p>
+            <ul>
+                <li><strong>Osakkaat:</strong> tunnukset luodaan, kun kauppakirja toimitetaan isännöintiyritykselle.</li>
+                <li><strong>Asukkaat:</strong> tunnukset luodaan muuttoilmoituksen yhteydessa <a href="https://kiinteistotahkola.fi/asukkaille/ilmoita-muutosta" target="_blank" rel="noopener">Kiinteistotahkolan sivuilla</a>.</li>
+            </ul>
+        </section>
+
+        <!-- Ilmoitustaulu -->
+        <section>
+            <h2>Ilmoitustaulu</h2>
+            <p>Hallituksen tiedotteet, huoltotyöilmoitukset ja talkookutsut kiinnitetaan porraskäytävien ilmoitustauluille. Autohallia koskevat ilmoitukset ilmestyvät usein vain autohallin sisäoviin. Asukkaita suositellaan tiedottamaan ilmoitustaululla häiritsevistä remonteista tai juhlista.</p>
+        </section>
+
+        <!-- UKK -->
+        <section class="faq">
+            <h2>Usein kysytyt kysymykset</h2>
+
+            <h3>Hallinto</h3>
+
+            <details>
+                <summary>Kodinkansio puuttuu tai siita puuttuu ohjeita?</summary>
+                <div>Sähköiset kopiot löytyvät <a href="https://kiinteistotahkola.ovi.premis.fi/documents" target="_blank" rel="noopener">Premiksen asiakirja-arkistosta</a> kansiosta "Säännöt ja ohjeet".</div>
+            </details>
+
+            <details>
+                <summary>Miten saan osakaspostin sähköisenä?</summary>
+                <div>Yhteystiedot päivitetään <a href="https://www.maanmittauslaitos.fi/asioi-verkossa/asiointipalvelu-henkiloasiakkaille" target="_blank" rel="noopener">Maanmittauslaitoksen asiointipalvelussa</a>.</div>
+            </details>
+
+            <details>
+                <summary>Onko osakkeet sähköisiä vai paperisia?</summary>
+                <div>Riippuu huoneistosta. Osakasluettelo siirrettiin Huoneistotietojärjestelmään 17.11.2023, ja siirtymäaika on 10 vuotta. Muunnos onnistuu <a href="https://www.maanmittauslaitos.fi/asioi-verkossa/asiointipalvelu-henkiloasiakkaille" target="_blank" rel="noopener">Maanmittauslaitoksella</a>.</div>
+            </details>
+
+            <h3>Ilmanvaihto</h3>
+
+            <details>
+                <summary>Saanko säätää ilmanvaihtoa itse?</summary>
+                <div>Kyllä, ohjauspaneelista. Suositellut tasot ovat 2 ja 3. Ilmanvaihtoa ei saa kytkeä kokonaan pois.</div>
+            </details>
+
+            <details>
+                <summary>Pitääkö minun vaihtaa suodattimet?</summary>
+                <div>Ei. Huoltoyhtiö vaihtaa suodattimet kolme kertaa vuodessa (huhti-, elo- ja marraskuu) ja säätää kesäohituspellin.</div>
+            </details>
+
+            <h3>Vesi</h3>
+
+            <details>
+                <summary>Miksi maksamme vesivastiketta henkilomäärän mukaan?</summary>
+                <div>Hoitovastikkeeseen sisältyy vesiennakkomaksu henkilomäärän perusteella. Isannöintitoimisto laskee erotuksen todelliseen kulutukseen kerran vuodessa marraskuussa.</div>
+            </details>
+
+            <details>
+                <summary>Kenen vastuulla hajulukkojen puhdistus on?</summary>
+                <div>Kevyt puhdistus (sisaosan nosto, putkenavaus) kuuluu asukkaalle. Hajulukon avaaminen kuuluu huoltoyhtiön ammattilaiselle.</div>
+            </details>
+
+            <h3>Ikkunat ja parvekkeet</h3>
+
+            <details>
+                <summary>Peseeko taloyhtiö ikkunat?</summary>
+                <div>Kylla, yleensa keväisin. Pesu tehdään ulkokautta nosturia käyttäen.</div>
+            </details>
+
+            <details>
+                <summary>Onko normaalia, etta vettä tulee parvekkeelle lasien ollessa kiinni?</summary>
+                <div>Kyllä, parvekelasit eivät ole täysin tiivitä.</div>
+            </details>
+
+            <h3>Palovaroittimet</h3>
+
+            <details>
+                <summary>Kuka vaihtaa palovaroittimien patterit?</summary>
+                <div>Testaus on asukkaan vastuulla, mutta patterien vaihto kuuluu huoltoyhtiölle.</div>
+            </details>
+
+            <h3>Jätehuolto</h3>
+
+            <details>
+                <summary>Tyhjennysaikataulu</summary>
+                <div>
+                    <table>
+                        <thead><tr><th>Jäteastia</th><th>Tyhjennystiheys</th></tr></thead>
+                        <tbody>
+                            <tr><td>Sekajäte (3 kpl)</td><td>2 krt/viikko</td></tr>
+                            <tr><td>Kartonkipakkaukset (3 kpl)</td><td>2 krt/viikko</td></tr>
+                            <tr><td>Muovipakkaukset (3 kpl)</td><td>1 krt/viikko</td></tr>
+                            <tr><td>Biojäte (2 kpl)</td><td>1 krt/viikko</td></tr>
+                            <tr><td>Lasipakkaukset (1 kpl)</td><td>Joka 4. viikko</td></tr>
+                            <tr><td>Pienmetalli (1 kpl)</td><td>Joka 4. viikko</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </details>
+
+            <details>
+                <summary>Iso esine, joka ei mahdu jäteastiaan?</summary>
+                <div>Vie Sortti-asemalle tai muuhun jätepisteeseen. Älä jätä jätehuoneen viereen. Lisätietoja: <a href="https://www.hsy.fi/jatteet-ja-kierratys/" target="_blank" rel="noopener">HSY</a>.</div>
+            </details>
+
+            <h3>Saunaosasto ja kerhohuone (B-rappu, 7. krs)</h3>
+
+            <details>
+                <summary>Varaukset ja hinnat</summary>
+                <div>
+                    <p>Varaukset tehdään <a href="https://www.kodinportaali.fi" target="_blank" rel="noopener">Kodinportaalissa</a> (mobiilisovellus: "Kodinportti Mobile"). Tunnukset saa isannöintiyritykseltä. Varauksia voi tehdä enintään 60 pv eteenpäin.</p>
+                    <ul>
+                        <li><strong>Sauna:</strong> to&ndash;su klo 18&ndash;22, 6 &euro;/tunti</li>
+                        <li><strong>Kerhohuone:</strong> joka päivä klo 8&ndash;22, 2,5 &euro;/tunti</li>
+                    </ul>
+                    <p>Tilat avataan oman asunnon avaimella. Ulkopuolisia vieraita saa kutsua, kun varaaja on itse paikalla.</p>
+                </div>
+            </details>
+
+            <h3>Pesutupa (A-rappu, pihanpuoleinen sisäänkäynti)</h3>
+
+            <details>
+                <summary>Laitteet, varaukset ja hinta</summary>
+                <div>
+                    <ul>
+                        <li>Pesukone 8 kg ja 11 kg</li>
+                        <li>Kuivausrumpu 8 kg (2 kpl)</li>
+                        <li>Mankeli</li>
+                        <li>Kuivaushuone</li>
+                    </ul>
+                    <p>Varaus <a href="https://www.kodinportaali.fi" target="_blank" rel="noopener">Kodinportaalista</a>, joka päivä klo 8&ndash;22. Hinta 3 &euro;/tunti (sis. kayttökulut, ei pesuaineita).</p>
+                </div>
+            </details>
+
+            <h3>Rappukäytävät</h3>
+
+            <details>
+                <summary>Hissin kutsusuunnat</summary>
+                <div>Ylospäin -2-, -1- ja P-kerroksista. Alaspäin asuinkerroksista. 1. kerroksesta hissi olettaa alaspäin &ndash; mene hissiin, kun ovi avautuu.</div>
+            </details>
+
+            <h3>Pyorä- ja urheiluvalinevarastot</h3>
+
+            <details>
+                <summary>Onko pesupaikka polkupyörille?</summary>
+                <div>Kyll', B-rapun polkupyöravarastossa (vesihana, kasisuihku, lattiakaivo).</div>
+            </details>
+
+            <h3>Autohalli</h3>
+
+            <details>
+                <summary>Miten nosto-ovi avataan?</summary>
+                <div>
+                    <ul>
+                        <li>Rekisterinumeron kameratunnistus kadulta (vaatii rekisteröinnin)</li>
+                        <li>Kameratunnistus hallin sisältä (ei vaadi rekisterointia)</li>
+                        <li>Soittamalla ovenavausnumeroon (vaatii numeron rekisteröinnin)</li>
+                        <li>Manuaalinen kytkin oven vieressa hallin sisäpuolella</li>
+                    </ul>
+                    <p>Rekisteri- ja puhelinnumerot ilmoitetaan huoltoyhtiölle tai isännöintitoimistolle.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>Autohallin pesu</summary>
+                <div>Perusteellinen pesu noin 4 kertaa vuodessa. Kulkuvälineet siirrettävä pois pesun ajaksi (~2 h). Huoltoyhtiö tiedottaa noin kaksi viikkoa etukäteen.</div>
+            </details>
+
+            <details>
+                <summary>Sähkoautojen lataus omalla paikalla</summary>
+                <div>
+                    <p>Vain Virta-latausasemat sallittu (aiemmin asennetut eParking-asemat toistaiseksi kaytossa enintaan 3,6 kW). Lataushinta tällä hetkella 17 snt/kWh, taloyhtiö ei tavoittele voittoa.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>Yhteiset latauspaikat (paikat 25 ja 26)</summary>
+                <div>
+                    <p>Virran 22 kW laturit (Type 2). Käytettävissä <a href="https://www.virta.global/fi/sahkoautoilija" target="_blank" rel="noopener">Virta-sovelluksella</a>. Pysäköinti enintään 3 h latauksen aikana klo 8&ndash;22.</p>
+                </div>
+            </details>
+
+            <h3>Kodinkoneet (Siemens)</h3>
+
+            <details>
+                <summary>Huoltoliike ja liesituulettimen suodatin</summary>
+                <div>
+                    <p>Siemens-huolto: Itälahdenkatu 18 A, Lauttasaari (ark. 8&ndash;16). <a href="https://www.siemens-home.bsh-group.com/fi/huolto/yhteystiedot" target="_blank" rel="noopener">Verkkopalvelu</a>.</p>
+                    <p>Alkuperäisen iQ300-liesituulettimen yhteensopiva suodatin: <a href="https://www.siemens-home.bsh-group.com/fi/fi/product/11034172" target="_blank" rel="noopener">Clean Air Plus 11034172</a>.</p>
+                </div>
+            </details>
+
+            <h3>Talkoot</h3>
+
+            <details>
+                <summary>Tietoa talkoista</summary>
+                <div>Talkoot jarjestetään yleensä kaksi kertaa vuodessa (alkukesa ja syksy). Osallistuminen on vapaaehtoista. Ajankohta ilmoitetaan rappujen ilmoitustauluilla 1&ndash;2 viikkoa etukäteen.</div>
+            </details>
         </section>
 
         <footer>
